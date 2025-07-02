@@ -20,14 +20,13 @@ function Home() {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Container w="fit-content"> 
+                <Container maxW={650}> 
                     <VStack gap={0}>
                         <Box w="full">
                             <IconButtonRow />
                         </Box>
                         <Container
                             bg="white"  
-                            maxW={800} 
                             border="1px solid"
                             borderColor="gray.200"
                             shadow="0 0 5px rgba(0, 0, 0, 0.1)"
@@ -52,7 +51,7 @@ function Home() {
                 </Box>
             </Flex>
             
-            <Container maxW={800}>
+            <Container maxW={650}>
                 <EducationExperience />
             </Container>
         </Box>
