@@ -21,7 +21,7 @@ function Profile() {
                         <Icon size="sm">
                             <MapPin />
                         </Icon>
-                        <Text fontSize="sm">Saint Paul, MN</Text>
+                        <Text fontSize="sm">Saint Paul, Minnesota</Text>
                     </HStack>
                 </VStack>
             </Flex>

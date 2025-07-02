@@ -43,7 +43,7 @@ function Home() {
                 </Container>
                 <Box  
                     position="absolute"
-                    bottom={32}
+                    bottom={28}
                 >
                     <Icon color="gray.600" size="md">
                         <MoveDown />
