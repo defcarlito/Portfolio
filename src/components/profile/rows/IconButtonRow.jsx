@@ -15,17 +15,14 @@ function IconButtonRow() {
                     my={2}
                     p={1}
                 >   
-                    <Box>
+                    <HStack gap={1}>
                         <IconButton color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
                             <Linkedin />
                         </IconButton>
                         <IconButton color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
                             <Github />
                         </IconButton>
-                        <IconButton color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
-                            <Mail />
-                        </IconButton>
-                    </Box>
+                    </HStack>
                 </Flex>
                 <Flex
                     dir="row"
