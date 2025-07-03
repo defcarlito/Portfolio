@@ -15,16 +15,16 @@ function EducationExperience(){
             p={2}
         >
             <Tabs.Root defaultValue="education" variant="plain" fitted w="full">
-                <Tabs.List bg="bg.muted" rounded="l3" p="1">
-                    <Tabs.Trigger value="education">
+                <Tabs.List bg="gray.100" rounded="l3" p="1">
+                    <Tabs.Trigger value="education" color="black">
                         <GraduationCap size={16} />
                         Education
                     </Tabs.Trigger>
-                    <Tabs.Trigger value="experience">
+                    <Tabs.Trigger value="experience" color="black">
                         <Briefcase size={16} />
                         Experience
                     </Tabs.Trigger>
-                    <Tabs.Indicator rounded="l2" />
+                    <Tabs.Indicator bg="white" rounded="l2" boxShadow="0 0 5px rgba(0, 0, 0, 0.1)" />
                 </Tabs.List>
                 <Tabs.Content value="education">
                     this is education
