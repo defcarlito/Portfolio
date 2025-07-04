@@ -1,10 +1,11 @@
-import { Box, Container, VStack, Icon, Flex } from "@chakra-ui/react"
-import { MoveDown } from 'lucide-react'
+import { Box, Container, VStack, Icon, Flex, Heading, HStack, Button } from "@chakra-ui/react"
+import { MoveDown, ArrowRight } from 'lucide-react'
 
 import Profile from "../components/profile/Profile";
 import IconButtonRow from "../components/profile/rows/IconButtonRow";
 import EducationExperience from "../components/sections/bottom/EducationExperience";
 import EmailRow from "../components/profile/rows/EmailRow";
+import ProjectShowcase from "../components/sections/bottom/ProjectShowcase";
 
 function Home() {
     return (
@@ -50,10 +51,34 @@ function Home() {
                     </Icon>
                 </Box>
             </Flex>
-            
-            <Container maxW={650}>
-                <EducationExperience />
-            </Container>
+            <VStack gap={40}>
+                <Container maxW={650}>
+                    <EducationExperience />
+                </Container>
+
+                <Container maxW={650}>
+                    <HStack position="relative" justifyContent="center">
+                        <Heading 
+                            justifySelf="center" 
+                            size="3xl"
+                        >
+                        Recent Projects
+                        </Heading>
+
+                        <Button 
+                            color="gray.400" 
+                            variant="plain"
+                            position="absolute"
+                            right={0}
+                        >
+                            View more
+                            <ArrowRight />
+                        </Button>
+                    </HStack>
+                    <ProjectShowcase />
+                </Container>
+            </VStack>
+
         </Box>
     )
 }
