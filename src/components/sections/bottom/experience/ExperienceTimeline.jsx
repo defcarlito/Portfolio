@@ -26,10 +26,8 @@ function ExperienceTimeline(){
                                 <Text color="gray.400">Rochester, Minnesota</Text>
                             </HStack>
                         </Timeline.Title>
-                        <VStack alignItems="flex-start" gap={0} p={2}>
-                            <Text fontSize="sm">
-                                <LoremIpsum p={1} avgWordsPerSentence={4} />
-                            </Text>
+                        <VStack alignItems="flex-start" gap={0} p={2} fontSize="sm">
+                            <LoremIpsum p={1} avgWordsPerSentence={4} />
                         </VStack>
                     </Timeline.Content>
                 </Timeline.Item>
@@ -54,10 +52,8 @@ function ExperienceTimeline(){
                                 <Text color="gray.400">Rochester, Minnesota</Text>
                             </HStack>
                         </Timeline.Title>
-                        <VStack alignItems="flex-start" gap={0} p={2}>
-                            <Text fontSize="sm">
-                                <LoremIpsum p={1} avgWordsPerSentence={4} />
-                            </Text>
+                        <VStack alignItems="flex-start" gap={0} p={2} fontSize="sm">
+                            <LoremIpsum p={1} avgWordsPerSentence={4} />
                         </VStack>
                     </Timeline.Content>
                 </Timeline.Item>

@@ -19,7 +19,7 @@ function Project() {
                 <Card.Title color="black">Proj title</Card.Title>
             </Card.Header>
             <Card.Body>
-                <Card.Description>
+                <Card.Description as="div">
                     <LoremIpsum p={1} avgWordsPerSentence={4} />
                 </Card.Description>
             </Card.Body>

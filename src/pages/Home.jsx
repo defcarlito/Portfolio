@@ -12,6 +12,7 @@ function Home() {
         <Box 
             bg="white" 
             color="black"
+            py={20}
         >
             <Flex 
                 position="relative"
@@ -21,63 +22,57 @@ function Home() {
                 justifyContent="center"
                 alignItems="center"
             >
-                <Container maxW={650}> 
-                    <VStack gap={0}>
-                        <Box w="full">
-                            <IconButtonRow />
-                        </Box>
-                        <Container
-                            bg="white"  
-                            border="1px solid"
-                            borderColor="gray.200"
-                            shadow="0 0 5px rgba(0, 0, 0, 0.1)"
-                            alignContent="center"
-                            borderRadius="lg"
-                        >
-                            <Profile />
-                        </Container>
+                <VStack gap={20}>
+                    <Container maxW={650}> 
+                        <VStack gap={0}>
+                            <Box w="full">
+                                <IconButtonRow />
+                            </Box>
+                            <Container
+                                bg="white"  
+                                border="1px solid"
+                                borderColor="gray.200"
+                                shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+                                alignContent="center"
+                                borderRadius="lg"
+                            >
+                                <Profile />
+                            </Container>
 
-                        <Box w="full">
-                            <EmailRow />
-                        </Box>
-                    </VStack>
-                </Container>
-                <Box  
-                    position="absolute"
-                    bottom={28}
-                >
-                    <Icon color="gray.600" size="md">
-                        <MoveDown />
-                    </Icon>
-                </Box>
+                            <Box w="full">
+                                <EmailRow />
+                            </Box>
+                        </VStack>
+                    </Container>
+
+
+                    <Container maxW={650}>
+                        <EducationExperience />
+                    </Container>
+
+                    <Container maxW={650}>
+                        <HStack position="relative" justifyContent="center">
+                            <Heading 
+                                justifySelf="center" 
+                                size="3xl"
+                            >
+                            Recent Projects
+                            </Heading>
+
+                            <Button 
+                                color="gray.400" 
+                                variant="plain"
+                                position="absolute"
+                                right={0}
+                            >
+                                View more
+                                <ArrowRight />
+                            </Button>
+                        </HStack>
+                        <ProjectShowcase />
+                    </Container>
+                </VStack>
             </Flex>
-            <VStack gap={40}>
-                <Container maxW={650}>
-                    <EducationExperience />
-                </Container>
-
-                <Container maxW={650}>
-                    <HStack position="relative" justifyContent="center">
-                        <Heading 
-                            justifySelf="center" 
-                            size="3xl"
-                        >
-                        Recent Projects
-                        </Heading>
-
-                        <Button 
-                            color="gray.400" 
-                            variant="plain"
-                            position="absolute"
-                            right={0}
-                        >
-                            View more
-                            <ArrowRight />
-                        </Button>
-                    </HStack>
-                    <ProjectShowcase />
-                </Container>
-            </VStack>
 
         </Box>
     )
