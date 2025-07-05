@@ -6,7 +6,7 @@ import { system } from '../theme'
 
 export function Provider(props) {
   return (
-    <ChakraProvider value={defaultSystem}>
+    <ChakraProvider value={system}>
       <ColorModeProvider {...props} />
     </ChakraProvider>
   )
