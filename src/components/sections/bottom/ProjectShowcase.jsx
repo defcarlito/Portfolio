@@ -6,7 +6,6 @@ function ProjectShowcase() {
     return (
         <Grid 
             templateColumns="repeat(2, 1fr)"
-            bg="white"
             borderRadius="lg"
             w="full"
             my={4}

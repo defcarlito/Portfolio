@@ -10,8 +10,7 @@ import ProjectShowcase from "../components/sections/bottom/ProjectShowcase";
 function Home() {
     return (
         <Box 
-            bg="white" 
-            color="black"
+            bg="background.base" 
             py={20}
         >
             <Flex 
@@ -29,10 +28,10 @@ function Home() {
                                 <IconButtonRow />
                             </Box>
                             <Container
-                                bg="white"  
+                                bg="card.base"
                                 border="1px solid"
-                                borderColor="gray.200"
-                                shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+                                borderColor="card.border"
+                                shadow="0 0 20px rgba(0, 0, 0, 0.4)"
                                 alignContent="center"
                                 borderRadius="lg"
                             >

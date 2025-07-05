@@ -7,10 +7,10 @@ function EducationExperience(){
     return (
         <Flex 
             dir="row"
-            bg="white"
+            bg="card.base"
             border="1px solid"
-            borderColor="gray.200" 
-            shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+            borderColor="card.border" 
+            shadow="0 0 20px rgba(0, 0, 0, 0.4)"
             borderRadius="lg"
             w="full"
             my={2}
@@ -23,16 +23,20 @@ function EducationExperience(){
                 w="full"
                 h={400}
             >
-                <Tabs.List bg="gray.100" rounded="l3" p="1">
-                    <Tabs.Trigger value="experience" color="black">
+                <Tabs.List bg="card.border" rounded="l3" p="1">
+                    <Tabs.Trigger value="experience">
                         <Briefcase size={16} />
                         Experience
                     </Tabs.Trigger>
-                    <Tabs.Trigger value="education" color="black">
+                    <Tabs.Trigger value="education">
                         <GraduationCap size={16} />
                         Education
                     </Tabs.Trigger>
-                    <Tabs.Indicator bg="white" rounded="l2" boxShadow="0 0 5px rgba(0, 0, 0, 0.1)" />
+                    <Tabs.Indicator 
+                        bg="card.base_lighter" 
+                        rounded="l2" 
+                        boxShadow="0 0 5px rgba(0, 0, 0, 0.1)" 
+                    />
                 </Tabs.List>
                 <Tabs.Content value="education" p={8}>
                     <EducationTimeline />

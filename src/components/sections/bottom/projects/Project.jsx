@@ -5,10 +5,10 @@ import { Github } from 'lucide-react'
 function Project() {
     return (
         <Card.Root 
-            bg="white" 
+            bg="card.base" 
             border="1px solid"
-            borderColor="gray.200"
-            shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+            borderColor="card.border"
+            shadow="0 0 20px rgba(0, 0, 0, 0.4)"
         >
             <Card.Header>
                 <Image
@@ -16,7 +16,7 @@ function Project() {
                     alt="Green double couch with wooden legs"
                     borderRadius="lg"
                 />
-                <Card.Title color="black">Proj title</Card.Title>
+                <Card.Title>Proj title</Card.Title>
             </Card.Header>
             <Card.Body>
                 <Card.Description as="div">

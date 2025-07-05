@@ -6,36 +6,36 @@ function IconButtonRow() {
             <HStack justifyContent="space-between">
                 <Flex 
                     dir="row"
-                    bg="white"
+                    bg="card.base"
                     border="1px solid"
-                    borderColor="gray.200" 
-                    shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+                    borderColor="card.border" 
+                    shadow="0 0 20px rgba(0, 0, 0, 0.4)"
                     borderRadius="lg"
                     w="fit-content"
                     my={2}
                     p={1}
                 >   
                     <HStack gap={1}>
-                        <IconButton color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
+                        <IconButton color="text.base" bg="card.base" _hover={{ bg: "card.border" }} size="sm">
                             <Linkedin />
                         </IconButton>
-                        <IconButton color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
+                        <IconButton color="text.base" bg="card.base" _hover={{ bg: "card.border" }} size="sm">
                             <Github />
                         </IconButton>
                     </HStack>
                 </Flex>
                 <Flex
                     dir="row"
-                    bg="white"
+                    bg="card.base"
                     border="1px solid"
-                    borderColor="gray.200" 
-                    shadow="0 0 5px rgba(0, 0, 0, 0.1)"
+                    borderColor="card.border" 
+                    shadow="0 0 20px rgba(0, 0, 0, 0.4)"
                     borderRadius="lg"
                     w="fit-content"
                     my={2}
                     p={1}
                 >
-                    <Button color="gray.600" bg="white" _hover={{ bg: "gray.100" }} size="sm">
+                    <Button color="text.base" bg="card.base" _hover={{ bg: "card.border" }} size="sm">
                         <FileDown /> Resume
                     </Button>
                 </Flex>

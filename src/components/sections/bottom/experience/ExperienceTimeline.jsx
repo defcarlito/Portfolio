@@ -4,7 +4,7 @@ import LoremIpsum from "react-lorem-ipsum"
 function ExperienceTimeline(){
     return (
         <Stack>
-            <Timeline.Root>
+            <Timeline.Root >
                 <Timeline.Item>
                     <Timeline.Connector>
                         <Timeline.Separator />
